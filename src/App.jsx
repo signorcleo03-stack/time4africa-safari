@@ -3,7 +3,7 @@ import './App.css';
 
 // Import your images at the top
 import logo from './assets/logo.jpeg';
-import giraffe from './assets/Giraffe.jpg';
+import giraffe from './assets/giraffe.jpg';
 import leopard from './assets/leopard.jpg';
 import maingate from './assets/maingate.jpg';
 import zebras from './assets/zebras.jpg';
