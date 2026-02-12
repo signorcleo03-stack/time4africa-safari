@@ -1,0 +1,192 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f4f1e9;
+  color: #333;
+}
+
+/* HEADER & LOGO */
+header {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #a67c52;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logo-area img {
+  height: 70px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 2.3em;
+  color: #2c3e50;
+}
+
+.logo-text span {
+  font-size: 0.9em;
+  color: #8b4513;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #8b4513;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('/safari-hero.jpg') center/cover no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero a {
+  background: #a67c52;
+  padding: 14px 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.hero a:hover {
+  background: #8b4513;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  border-bottom: 2px solid #a67c52;
+  padding-bottom: 5px;
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* BOOKING */
+#booking {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('/safari-bg.jpg') center/cover no-repeat;
+  padding: 70px 20px;
+}
+
+.booking-card {
+  background: rgba(255, 255, 255, 0.95);
+  max-width: 650px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.booking-card input,
+.booking-card select,
+.booking-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.booking-card button {
+  width: 100%;
+  background: #25d366;
+  color: #fff;
+  padding: 14px;
+  font-size: 1.05em;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking-card button:hover {
+  background: #1ebe5d;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 32px;
+  line-height: 60px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 3px solid #a67c52;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2em;
+  }
+}
